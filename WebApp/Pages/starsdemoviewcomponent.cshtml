@@ -1,0 +1,91 @@
+﻿@page
+@{
+    Layout = null;
+}
+@addTagHelper *, WebApp
+
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Stars</title>
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>jQuery Bar Rating - Minimal, light-weight jQuery ratings</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=1024, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/examples.css">
+        <!-- Icons -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+        <link rel="stylesheet" href="~/css/FontFace.css">
+
+        <!-- Themes -->
+        <link rel="stylesheet" href="css/themes/bars-1to10.css">
+        <link rel="stylesheet" href="css/themes/bars-movie.css">
+        <link rel="stylesheet" href="css/themes/bars-square.css">
+        <link rel="stylesheet" href="css/themes/bars-pill.css">
+        <link rel="stylesheet" href="css/themes/bars-reversed.css">
+        <link rel="stylesheet" href="css/themes/bars-horizontal.css">
+        <link rel="stylesheet" href="css/themes/fontawesome-stars.css">
+        <link rel="stylesheet" href="css/themes/css-stars.css">
+        <link rel="stylesheet" href="css/themes/bootstrap-stars.css">
+        <link rel="stylesheet" href="css/themes/fontawesome-stars-o.css">
+
+        <!-- Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/jquery.barrating.js"></script>
+    </head>
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>starsdemo2</title>
+    </head>
+
+    <body>
+
+        <section class="section section-examples">
+
+            <div class="examples">
+                <div class="row">
+
+                    <div class="box box-orange box-example-1to10">
+                        <div class="box-header">1/10 Rating</div>
+                        <div class="box-body">
+                            <vc:rating-control rating-control-type="1to10" rating-control-id-value="101"></vc:rating-control>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="box box-blue box-example-movie">
+                            <div class="box-header">Movie Rating</div>
+                            <div class="box-body">
+                                <vc:rating-control rating-control-type="movie" rating-control-id-value="102"></vc:rating-control>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="box box-green box-example-pill">
+                            <div class="box-header">Pill Rating</div>
+                            <div class="box-body">
+                                <vc:rating-control rating-control-type="pill" rating-control-id-value="103"></vc:rating-control>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </body>
+
+</html>

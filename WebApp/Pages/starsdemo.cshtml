@@ -1,0 +1,174 @@
+﻿@page
+@model WebApp.Pages.starsdemoModel
+@{
+    Layout = null;
+}
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Stars</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>jQuery Bar Rating - Minimal, light-weight jQuery ratings</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1024, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/examples.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/FontFace.css">
+
+    <!-- Themes -->
+    <link rel="stylesheet" href="css/themes/bars-1to10.css">
+    <link rel="stylesheet" href="css/themes/bars-movie.css">
+    <link rel="stylesheet" href="css/themes/bars-square.css">
+    <link rel="stylesheet" href="css/themes/bars-pill.css">
+    <link rel="stylesheet" href="css/themes/bars-reversed.css">
+    <link rel="stylesheet" href="css/themes/bars-horizontal.css">
+    <link rel="stylesheet" href="css/themes/fontawesome-stars.css">
+    <link rel="stylesheet" href="css/themes/css-stars.css">
+    <link rel="stylesheet" href="css/themes/bootstrap-stars.css">
+    <link rel="stylesheet" href="css/themes/fontawesome-stars-o.css">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+</head>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>starsdemo</title>
+</head>
+
+ <body>
+    
+    <section class="section section-examples">
+      
+      <div class="examples">
+        <div class="row">
+          <div class="col">
+            <div class="box box-orange box-example-1to10">
+              <div class="box-header">1/10 Rating</div>
+              <div class="box-body">
+                <select id="example-1to10" name="rating" autocomplete="off">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7" selected="selected">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="box box-blue box-example-movie">
+              <div class="box-header">Movie Rating</div>
+              <div class="box-body">
+                <select id="example-movie" name="rating" autocomplete="off">
+                  <option value="Bad">Bad</option>
+                  <option value="Mediocre">Mediocre</option>
+                  <option value="Good" selected="selected">Good</option>
+                  <option value="Awesome">Awesome</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="box box-blue box-example-square">
+              <div class="box-header">Square Rating</div>
+              <div class="box-body">
+                <select id="example-square" name="rating" autocomplete="off">
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="box box-green box-example-pill">
+              <div class="box-header">Pill Rating</div>
+              <div class="box-body">
+                <select id="example-pill" name="rating" autocomplete="off">
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="box box-green box-large box-example-reversed">
+              <div class="box-header">Reversed Rating</div>
+              <div class="box-body">
+                <select id="example-reversed" name="rating" autocomplete="off">
+                  <option value="Strongly Agree">Strongly Agree</option>
+                  <option value="Agree">Agree</option>
+                  <option value="Neither Agree or Disagree" selected="selected">Neither Agree or Disagree</option>
+                  <option value="Disagree">Disagree</option>
+                  <option value="Strongly Disagree">Strongly Disagree</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="box box-orange box-large box-example-horizontal">
+              <div class="box-header">Horizontal Rating</div>
+              <div class="box-body">
+                <select id="example-horizontal" name="rating" autocomplete="off">
+                  <option value="10">10</option>
+                  <option value="9">9</option>
+                  <option value="8">8</option>
+                  <option value="7">7</option>
+                  <option value="6">6</option>
+                  <option value="5">5</option>
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1" selected="selected">1</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+
+  
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/jquery.barrating.js"></script>
+    <script src="js/examples.js"></script>
+  </body>
+
+
+</html>
