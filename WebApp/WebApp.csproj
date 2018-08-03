@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="Pages\starsdemoviewcomponent.cshtml">
+    <Content Update="Pages\RatingDemoComplete.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
   </ItemGroup>

@@ -1,0 +1,19 @@
+﻿@page
+@model WebApp.Pages.RatingDemoTagHelperModel
+@{
+    Layout = null;
+}
+@addTagHelper *, WebApp
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RatingDemoTagHelper</title>
+</head>
+<body>
+    <h1>RatingDemoTagHelper</h1>
+    <vc:rating-control rating-control-type="1to10" rating-control-id-value="999">
+    </vc:rating-control>
+</body>
+</html>

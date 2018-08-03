@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace WebApp.Pages
 {
-    public class starsdemoModel : PageModel
+    public class RatingDemoRawHtmlModel : PageModel
     {
         public void OnGet()
         {

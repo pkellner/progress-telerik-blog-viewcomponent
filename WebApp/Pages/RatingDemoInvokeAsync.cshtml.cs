@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace WebApp.Pages
 {
-    public class starsdemoModel2 : PageModel
+    public class RatingDemoInvokeAsyncModel : PageModel
     {
         public void OnGet()
         {
