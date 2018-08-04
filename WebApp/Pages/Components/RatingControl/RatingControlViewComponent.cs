@@ -1,15 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Configuration;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using WebApp.Models;
 
 namespace WebApp.Pages.Components.RatingControl
 {
-
     public class RingControlModel
     {
         public List<SelectListItem> SelectedListItems { get; set; }
@@ -22,8 +19,6 @@ namespace WebApp.Pages.Components.RatingControl
     public class RatingControlViewComponent : ViewComponent
     {
         private readonly RatingControlOptions _ratingControlOptions;
-
-        
 
         public RatingControlViewComponent(IConfiguration config)
         {
@@ -76,6 +71,5 @@ namespace WebApp.Pages.Components.RatingControl
 
             return View(ringControlModel);
         }
-
     }
 }
